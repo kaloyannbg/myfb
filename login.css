@@ -1,0 +1,218 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #f0f0f0;
+}
+
+#reg-wrap {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#reg-wrap #reg-form {
+    position: absolute;
+    top: 100px;
+    border: 1px solid black;
+    background-color: white;
+    padding: 20px;
+    z-index: 1;
+    display: none;
+}
+
+#reg-form #row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#reg-form #row .left {
+    flex: 1;
+}
+
+#reg-form #row .right img {
+    cursor: pointer;
+}
+
+#reg-form li {
+    position: relative;
+}
+
+#reg-form li #errors {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    display: none;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+.error-reg-absolute {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    left: -170px;
+    top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.error-log-absolute-email {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    left: -170px;
+    top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+.error-log-absolute-password {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    position: absolute;
+    left: -170px;
+    top: 20px;
+    border-radius: 50px;
+    cursor: pointer;
+    display: none;
+    opacity: 0.7;
+    z-index: 1;
+}
+
+#wrapper {
+    width: 1000px;
+    margin: auto;
+    margin-top: 140px;
+    display: flex;
+    align-items: center;
+}
+
+#wrapper #left,
+#wrapper #right {
+    flex: 1;
+}
+
+#wrapper #left h1 {
+    color: #437FC7;
+}
+
+#wrapper #left h3 {
+    color: slategray;
+}
+
+#wrapper #left img {
+    opacity: 0.9;
+}
+
+#wrapper #right #column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid silver;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+#right #column li #errors {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 50px;
+    text-align: center;
+    margin-top: 10px;
+    opacity: 0.7;
+}
+
+#column ul li {
+    list-style-type: none;
+    position: relative;
+}
+
+#column ul li input.email {
+    background-color: #EDF6FF;
+}
+
+#column ul li input {
+    width: 300px;
+    height: 40px;
+    text-indent: 10px;
+    margin-top: 20px;
+    border: 1px solid #437FC7;
+    border-radius: 10px;
+    outline: none;
+    position: relative;
+}
+
+#column ul li input[type="submit"] {
+    width: 300px;
+    height: 40px;
+    text-indent: 0px;
+    background-color: #6DAFFE;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#column ul li input[type='button'] {
+    width: 300px;
+    height: 40px;
+    text-indent: 0px;
+    background-color: #6DAFFE;
+    border: 1px solid black;
+    color: white;
+    font-weight: bold;
+    font-size: 17px;
+    cursor: pointer;
+}
+
+#column ul li input.new_account_btn {
+    background-color: yellowgreen;
+}
+
+#column li p {
+    margin-top: 10px;
+    text-align: center;
+}
+
+#column li p a {
+    color: blue;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+#column li p a:hover {
+    color: blue;
+    font-size: 15px;
+    text-decoration: underline;
+}
+
+#column hr {
+    margin-top: 10px;
+}
+
+@media screen and (max-width: 1000px) {
+    #wrapper {
+        width: 100%;
+        margin-top: 0px;
+        flex-direction: column;
+    }
+}
